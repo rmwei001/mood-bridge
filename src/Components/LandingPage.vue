@@ -83,8 +83,8 @@ onBeforeUnmount(() => {
             <span aria-hidden="true">{{ typed }}</span><span aria-hidden="true" class="text-transparent">{{ untyped }}</span>
           </h1>
           <p class="mt-4">MoodBridge empowers clinicians and patients with seamless mood tracking, instant alerts, reminders and data driven insights for better real time monitoring.</p>
-          <v-btn to="/about" color="surface" rounded="pill" class="ma-3 mt-6">Explore MoodBridge</v-btn>
-          <v-btn rounded="pill" variant="outlined" class="ma-3 mt-6">For Clinicians</v-btn>
+          <v-btn to="/about" color="buttons" rounded="pill" class="ma-3 mt-6">Explore MoodBridge</v-btn>
+          <v-btn color="buttons" rounded="pill" variant="outlined" class="ma-3 mt-6">For Clinicians</v-btn>
         </v-container>
       </v-overlay>
     </v-sheet>
@@ -115,7 +115,7 @@ onBeforeUnmount(() => {
                 <v-img src="/image/image1.jpg" height="200" cover></v-img>
                 <v-card-title>Stay Connected</v-card-title>
                 <v-card-text>Track your mood and progress between sessions. Bring those insights into your next appointment.</v-card-text>
-                <v-btn color="white" variant="flat" width="120" height="32" class="ma-4 text-black">Learn More</v-btn>
+                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">Learn More</v-btn>
               </div>
             </v-card>
           </v-slide-y-reverse-transition>
@@ -128,7 +128,7 @@ onBeforeUnmount(() => {
                 <v-img src="/image/image2.jpg" height="200" cover></v-img>
                 <v-card-title>Reflect</v-card-title>
                 <v-card-text>Write down important thoughts and experiences while they are fresh. Review your reflections before your next session.</v-card-text>
-                <v-btn color="white" variant="flat" width="120" height="32" class="ma-4 text-black">Learn More</v-btn>
+                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">Learn More</v-btn>
               </div>
             </v-card>
           </v-slide-y-reverse-transition>
@@ -141,7 +141,7 @@ onBeforeUnmount(() => {
                 <v-img src="/image/image3.jpg" height="200" cover></v-img>
                 <v-card-title>Better Context</v-card-title>
                 <v-card-text>Keep your clinician informed about what happens between visits. These updates can help guide your next conversation.</v-card-text>
-                <v-btn color="white" variant="flat" width="120" height="32" class="ma-4 text-black">Learn More</v-btn>
+                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">Learn More</v-btn>
               </div>
             </v-card>
           </v-slide-y-reverse-transition>
@@ -154,7 +154,7 @@ onBeforeUnmount(() => {
                 <v-img src="/image/image4.jpg" height="200" cover></v-img>
                 <v-card-title>Your Choice</v-card-title>
                 <v-card-text>Choose what information you share with your clinician. You stay in control of your personal reflections.</v-card-text>
-                <v-btn color="white" variant="flat" width="120" height="32" class="ma-4 text-black">Learn More</v-btn>
+                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">Learn More</v-btn>
               </div>
             </v-card>
           </v-slide-y-reverse-transition>
@@ -180,7 +180,7 @@ onBeforeUnmount(() => {
                 <v-img src="/image/image5.jpg" height="200" cover></v-img>
                 <v-card-title>Getting Started</v-card-title>
                 <v-card-text>Discover the tools MoodBridge offers between sessions. Find out how to get started at your own pace.</v-card-text>
-                <v-btn color="white" variant="flat" width="120" height="32" class="ma-4 text-black">Get Started</v-btn>
+                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">Get Started</v-btn>
               </div>
             </v-card>
           </v-slide-y-reverse-transition>
@@ -193,7 +193,7 @@ onBeforeUnmount(() => {
                 <v-img src="/image/image6.jpg" height="200" cover></v-img>
                 <v-card-title>Privacy</v-card-title>
                 <v-card-text>Learn how your personal information is handled. Find out what you can share and who can see it.</v-card-text>
-                <v-btn color="white" variant="flat" width="120" height="32" class="ma-4 text-black">View Privacy</v-btn>
+                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">View Privacy</v-btn>
               </div>
             </v-card>
           </v-slide-y-reverse-transition>
@@ -206,7 +206,7 @@ onBeforeUnmount(() => {
                 <v-img src="/image/image7.jpg" height="200" cover></v-img>
                 <v-card-title>Patient Support</v-card-title>
                 <v-card-text>Get help with questions about using MoodBridge. Patient Support is not an emergency service.</v-card-text>
-                <v-btn color="white" variant="flat" width="120" height="32" class="ma-4 text-black">Learn More</v-btn>
+                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">Learn More</v-btn>
               </div>
             </v-card>
           </v-slide-y-reverse-transition>
@@ -219,7 +219,7 @@ onBeforeUnmount(() => {
                 <v-img src="/image/image8.jpg" height="200" cover></v-img>
                 <v-card-title>For Clinicians</v-card-title>
                 <v-card-text>Explore how MoodBridge can fit into your clinical practice. Learn how between-session updates can support your conversations with patients.</v-card-text>
-                <v-btn color="white" variant="flat" width="120" height="32" class="ma-4 text-black">For Clinicians</v-btn>
+                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">For Clinicians</v-btn>
               </div>
             </v-card>
           </v-slide-y-reverse-transition>
@@ -234,7 +234,7 @@ onBeforeUnmount(() => {
       <div class="d-flex flex-column align-center justify-center fill-height text-center text-white pa-6">
         <h2 class="text-h3">A more connected approach to mental healthcare.</h2>
         <p class="mt-4">MoodBridge supports the work you already do with your clinician.</p>
-        <v-btn to="/about" color="surface" class="ma-3 mt-6">Explore MoodBridge</v-btn>
+        <v-btn to="/about" color="buttons" class="ma-3 mt-6">Explore MoodBridge</v-btn>
       </div>
     </VParallax>
   </v-container>
@@ -248,7 +248,7 @@ onBeforeUnmount(() => {
           <p class="text-body-2 mb-4 opacity-70">Product news and updates from MoodBridge.</p>
           <v-text-field v-model="inputValue" label="Email address" outlined class="ma-4" bg-color="white">
             <template v-slot:append-inner>
-              <v-btn color="primary" >Subscribe</v-btn>
+              <v-btn color="buttons">Subscribe</v-btn>
             </template>
           </v-text-field>
         </v-col>
@@ -256,11 +256,11 @@ onBeforeUnmount(() => {
         <!-- Quick links -->
         <v-col md="2" offset-md="1">
           <h3 class="text-subtitle-2 mb-3">Quick Links</h3>
-          <div class="d-flex flex-column ga-2 text-body-2 opacity-70">
-            <a href="#">About Us</a>
-            <a href="#">For Patients</a>
-            <a href="#">For Clinicians</a>
-            <a href="#">News</a>
+          <div class="d-flex flex-column ga-2 text-body-2">
+            <a href="#" class="text-buttons">About Us</a>
+            <a href="#" class="text-buttons">For Patients</a>
+            <a href="#" class="text-buttons">For Clinicians</a>
+            <a href="#" class="text-buttons">News</a>
           </div>
         </v-col>
 
@@ -281,9 +281,9 @@ onBeforeUnmount(() => {
       <div class="d-flex align-center">
         <span class="text-caption opacity-70 flex-grow-1">&copy; {{ year }} MoodBridge</span>
         <div class="d-flex justify-center ga-1 flex-grow-1">
-          <v-btn icon="mdi-instagram" variant="text" size="small" aria-label="Instagram"></v-btn>
-          <v-btn icon="mdi-twitter" variant="text" size="small" aria-label="Twitter"></v-btn>
-          <v-btn icon="mdi-facebook" variant="text" size="small" aria-label="Facebook"></v-btn>
+          <v-btn icon="mdi-instagram" color="buttons" variant="text" size="small" aria-label="Instagram"></v-btn>
+          <v-btn icon="mdi-twitter" color="buttons" variant="text" size="small" aria-label="Twitter"></v-btn>
+          <v-btn icon="mdi-facebook" color="buttons" variant="text" size="small" aria-label="Facebook"></v-btn>
         </div>
         <div class="flex-grow-1"></div>
       </div>

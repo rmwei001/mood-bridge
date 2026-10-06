@@ -27,9 +27,9 @@ const vuetify = createVuetify({
     themes: {
         light: {
             colors: {
-                primary: "#79B946",
-                secondary: "#52A852",
-                surface: "#FFFFFF",
+                primary: "#000000",
+                secondary: "#3D3D3D",
+                buttons: "#A2CA3C",
             }
         }
     }
