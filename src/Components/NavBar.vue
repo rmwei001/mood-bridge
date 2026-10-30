@@ -15,6 +15,6 @@
             <v-btn to="/contact" color="white">Contact</v-btn>
         </div>
         <v-spacer></v-spacer>
-        <v-btn to="/profile" color="white">Profile</v-btn>
+        <v-btn to="/login" color="buttons" variant="flat" rounded="lg" class="text-white px-6">Log In</v-btn>
     </v-app-bar>
 </template>

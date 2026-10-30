@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomePage from '../Components/HomePage.vue'
 import LandingPage from '../Components/LandingPage.vue'
 import About from '../Components/About.vue'
 import Contact from '../Components/Contact.vue'
@@ -18,10 +17,6 @@ const router = createRouter({
       component: LandingPage,
     },
     {
-      path: '/home',
-      component: HomePage,
-    },
-    {
       path: '/about',
       component: About,
     },
@@ -30,7 +25,8 @@ const router = createRouter({
       component: Contact,
     },
     {
-      path: '/faqs',
+      path: '/faq',
+      alias: ['/faqs'],
       component: Faqs,
     },
     {
@@ -44,12 +40,19 @@ const router = createRouter({
     {
       path: '/profile',
       component: Profile,
+      meta: { requiresAuth: true },
     },
     {
       path: '/signup',
       component: SignUp,
     },
   ],
+})
+
+router.beforeEach((to) => {
+  if (to.meta.requiresAuth && localStorage.getItem('isAuthenticated') !== 'true') {
+    return { path: '/login', query: { redirect: to.fullPath } }
+  }
 })
 
 export default router

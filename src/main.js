@@ -30,6 +30,7 @@ const vuetify = createVuetify({
                 primary: "#000000",
                 secondary: "#3D3D3D",
                 buttons: "#A2CA3C",
+                cream: "#F5F2E9",
             }
         }
     }

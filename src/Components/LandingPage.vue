@@ -6,8 +6,8 @@ const inputValue = ref('')
 const year = new Date().getFullYear()
 
 const visible = reactive({
-  why: [false, false, false, false],
-  info: [false, false, false, false],
+  why: [false, false, false],
+  info: [false, false, false],
 })
 
 const revealOptions = { threshold: 0.2 }
@@ -108,53 +108,37 @@ onBeforeUnmount(() => {
     <h2 class="text-center mb-6">Why Choose MoodBridge?</h2>
     <v-sheet color="transparent" min-height="440" v-intersect="{ handler: onWhyScroll, options: revealOptions }">
       <v-row>
-        <v-col md="3">
+        <v-col md="4">
           <v-slide-y-reverse-transition>
             <v-card v-show="visible.why[0]" width="100%" height="100%" color="primary">
               <div class="d-flex flex-column">
                 <v-img src="/image/image1.jpg" height="200" cover></v-img>
-                <v-card-title>Stay Connected</v-card-title>
+                <v-card-title class="text-buttons">Stay Connected</v-card-title>
                 <v-card-text>Track your mood and progress between sessions. Bring those insights into your next appointment.</v-card-text>
-                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">Learn More</v-btn>
               </div>
             </v-card>
           </v-slide-y-reverse-transition>
         </v-col>
 
-        <v-col md="3">
+        <v-col md="4">
           <v-slide-y-reverse-transition>
             <v-card v-show="visible.why[1]" width="100%" height="100%" color="primary">
               <div class="d-flex flex-column">
                 <v-img src="/image/image2.jpg" height="200" cover></v-img>
-                <v-card-title>Reflect</v-card-title>
+                <v-card-title class="text-buttons">Reflect</v-card-title>
                 <v-card-text>Write down important thoughts and experiences while they are fresh. Review your reflections before your next session.</v-card-text>
-                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">Learn More</v-btn>
               </div>
             </v-card>
           </v-slide-y-reverse-transition>
         </v-col>
 
-        <v-col md="3">
+        <v-col md="4">
           <v-slide-y-reverse-transition>
             <v-card v-show="visible.why[2]" width="100%" height="100%" color="primary">
               <div class="d-flex flex-column">
                 <v-img src="/image/image3.jpg" height="200" cover></v-img>
-                <v-card-title>Better Context</v-card-title>
+                <v-card-title class="text-buttons">Better Context</v-card-title>
                 <v-card-text>Keep your clinician informed about what happens between visits. These updates can help guide your next conversation.</v-card-text>
-                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">Learn More</v-btn>
-              </div>
-            </v-card>
-          </v-slide-y-reverse-transition>
-        </v-col>
-
-        <v-col md="3">
-          <v-slide-y-reverse-transition>
-            <v-card v-show="visible.why[3]" width="100%" height="100%" color="primary">
-              <div class="d-flex flex-column">
-                <v-img src="/image/image4.jpg" height="200" cover></v-img>
-                <v-card-title>Your Choice</v-card-title>
-                <v-card-text>Choose what information you share with your clinician. You stay in control of your personal reflections.</v-card-text>
-                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">Learn More</v-btn>
               </div>
             </v-card>
           </v-slide-y-reverse-transition>
@@ -170,56 +154,43 @@ onBeforeUnmount(() => {
   <!-- Information -->
   <v-container max-width="100%">
     <h2 class="text-center">Be informed</h2>
-    <p class="text-center mb-6">Find what you need to get started with MoodBridge.</p>
+    <p class="text-center mb-6">Explore resources for patients and clinicians.</p>
     <v-sheet color="transparent" min-height="440" v-intersect="{ handler: onInfoScroll, options: revealOptions }">
       <v-row>
-        <v-col md="3">
+        <v-col md="4">
           <v-slide-y-reverse-transition>
             <v-card v-show="visible.info[0]" width="100%" height="100%" color="primary">
               <div class="d-flex flex-column">
-                <v-img src="/image/image5.jpg" height="200" cover></v-img>
-                <v-card-title>Getting Started</v-card-title>
-                <v-card-text>Discover the tools MoodBridge offers between sessions. Find out how to get started at your own pace.</v-card-text>
-                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">Get Started</v-btn>
+              <v-img src="/image/image8.jpg" height="200" cover></v-img>
+              <v-card-title>For Clinicians</v-card-title>
+              <v-card-text>Explore how MoodBridge can fit into your clinical practice. Learn how between-session updates can support your conversations with patients.</v-card-text>
+              <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">For Clinicians</v-btn>
               </div>
             </v-card>
           </v-slide-y-reverse-transition>
         </v-col>
 
-        <v-col md="3">
+        <v-col md="4">
           <v-slide-y-reverse-transition>
             <v-card v-show="visible.info[1]" width="100%" height="100%" color="primary">
               <div class="d-flex flex-column">
-                <v-img src="/image/image6.jpg" height="200" cover></v-img>
-                <v-card-title>Privacy</v-card-title>
-                <v-card-text>Learn how your personal information is handled. Find out what you can share and who can see it.</v-card-text>
-                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">View Privacy</v-btn>
+              <v-img src="/image/image6.jpg" height="200" cover></v-img>
+              <v-card-title>Privacy</v-card-title>
+              <v-card-text>Learn how your personal information is handled. Find out what you can share and who can see it.</v-card-text>
+              <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">View Privacy</v-btn>
               </div>
             </v-card>
           </v-slide-y-reverse-transition>
         </v-col>
 
-        <v-col md="3">
+        <v-col md="4">
           <v-slide-y-reverse-transition>
             <v-card v-show="visible.info[2]" width="100%" height="100%" color="primary">
               <div class="d-flex flex-column">
-                <v-img src="/image/image7.jpg" height="200" cover></v-img>
-                <v-card-title>Patient Support</v-card-title>
-                <v-card-text>Get help with questions about using MoodBridge. Patient Support is not an emergency service.</v-card-text>
-                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">Learn More</v-btn>
-              </div>
-            </v-card>
-          </v-slide-y-reverse-transition>
-        </v-col>
-
-        <v-col md="3">
-          <v-slide-y-reverse-transition>
-            <v-card v-show="visible.info[3]" width="100%" height="100%" color="primary">
-              <div class="d-flex flex-column">
-                <v-img src="/image/image8.jpg" height="200" cover></v-img>
-                <v-card-title>For Clinicians</v-card-title>
-                <v-card-text>Explore how MoodBridge can fit into your clinical practice. Learn how between-session updates can support your conversations with patients.</v-card-text>
-                <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">For Clinicians</v-btn>
+              <v-img src="/image/image7.jpg" height="200" cover></v-img>
+              <v-card-title>Patient Support</v-card-title>
+              <v-card-text>Get help with questions about using MoodBridge. Patient Support is not an emergency service.</v-card-text>
+              <v-btn color="buttons" variant="flat" width="120" height="32" class="ma-4">Learn More</v-btn>
               </div>
             </v-card>
           </v-slide-y-reverse-transition>

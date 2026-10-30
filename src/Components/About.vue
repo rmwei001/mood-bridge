@@ -40,26 +40,6 @@ export default {
       </v-container>
     </v-sheet>
 
-    <!-- Story -->
-    <v-sheet color="secondary" elevation="8" style="height: 800px" class="position-sticky top-0 d-flex align-center">
-      <v-container class="py-16">
-        <v-card flat rounded="lg">
-          <v-row no-gutters>
-            <v-col cols="6">
-              <v-img src="image/image4.jpg" height="500" cover></v-img>
-            </v-col>
-            <v-col cols="6" class="pa-16 d-flex flex-column justify-center">
-              <h2 class="text-h4 font-weight-light mb-8"> A session lasts an hour. The weeks around it do not</h2>
-              <v-responsive max-width="460">
-                <p class="text-body-1 mb-4">Between sessions, the work gets tested and often forgotten. The clinician hears a summary, not the week.</p>
-                <p class="text-body-1 text-medium-emphasis">MoodBridge joins those pieces, so care feels continuous</p>
-              </v-responsive>
-            </v-col>
-          </v-row>
-        </v-card>
-      </v-container>
-    </v-sheet>
-
     <!-- Beliefs -->
     <v-sheet theme="dark" elevation="8" style="height: 800px" class="position-sticky top-0 d-flex align-center">
       <v-container class="py-16">
@@ -136,25 +116,6 @@ export default {
 
     <v-img
       src="parallax2.jpg" height="800" class="position-sticky top-0" cover></v-img>
-
-    <!-- Clinicians -->
-    <v-sheet color="primary" elevation="8" style="height: 800px" class="position-sticky top-0 d-flex align-center text-black">
-      <v-container class="py-16">
-        <v-row align="center">
-          <v-col cols="6">
-            <h2 class="text-h4 font-weight-light mb-6">Built with the people who do the work.</h2>
-            <v-responsive max-width="460">
-              <p class="text-body-1 text-medium-emphasis">MoodBridge is being developed with mental health professionals and shaped by what they need in practice.</p>
-            </v-responsive>
-          </v-col>
-          <v-col cols="5" offset="1">
-            <v-card theme="dark" flat rounded="lg" class="pa-10">
-              <p class="text-h6 font-weight-light">We are early. We only claim what is true.</p>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-sheet>
 
     <!-- Closing -->
     <v-sheet elevation="8" style="height: 800px" class="position-relative d-flex align-center">

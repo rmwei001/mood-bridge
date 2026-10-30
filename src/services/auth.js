@@ -6,31 +6,24 @@ export function useAuth() {
 
     // Login
     async function login(credentials) {
+        if (!credentials.email || !credentials.password) {
+            throw new Error('Email and password are required')
+        }
 
-        try {
+        const userData = localStorage.getItem("user")
+        if (!userData) throw new Error('No user found')
 
-            if (!credentials.email || !credentials.password) {
-                throw new Error('Email and password are required')
-            }
-            
-            const userData = localStorage.getItem("user")
+        const user = JSON.parse(userData)
+        if (user.email !== credentials.email || user.password !== credentials.password) {
+            throw new Error('Invalid email or password')
+        }
 
-            if (userData) {
-                isAuthenticated.value = true
-                if (userData.role == 1) isAdmin.value = true
+        isAuthenticated.value = true
+        isAdmin.value = user.role == 1
+        localStorage.setItem("isAuthenticated", "true")
+        localStorage.setItem("isAdmin", String(isAdmin.value))
 
-                localStorage.setItem("isAuthenticated", isAuthenticated.value);
-                localStorage.setItem("isAdmin", isAdmin.value);
-
-                return response
-            } else {
-                throw new Error('No user found')
-            }
-
-        } catch (err) {
-            console.log("Login failed")
-           
-        } 
+        return user
     }
 
     // Register
